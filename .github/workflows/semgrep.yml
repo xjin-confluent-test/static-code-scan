@@ -1,5 +1,7 @@
 name: Semgrep
 on: [pull_request]
+env:
+  GITHUB_TOKEN: ${{ secrets.static-code-scan }}
 jobs:
   semgrep:
     runs-on: ubuntu-latest
