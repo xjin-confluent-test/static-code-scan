@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check
     env:
-     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     GITHUB_TOKEN: ${{ secrets.static-code-scan }}
     steps:
       - uses: actions/checkout@v1
       - name: Semgrep
